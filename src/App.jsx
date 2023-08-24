@@ -11,7 +11,7 @@ function App() {
     <>
     <div id='navbar'>
       <Link to="/"> Home </Link>
-      <Link to="/players/:id"> Player </Link>
+      
 
 
     </div>

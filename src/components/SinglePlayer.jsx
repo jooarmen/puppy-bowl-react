@@ -2,7 +2,7 @@
 
 function SinglePlayer(){
     return (
-        <div>"Single Player Component"</div>
+        <div>Single Player Component</div>
     )
 }
 
