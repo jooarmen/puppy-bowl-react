@@ -13,5 +13,16 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT_NAME}/players
     }
 }
 
+export async function GetSinglePlayer(playerId){
+    try {
+        const response = await fetch(`/${API_URL}/${playerId}`)
+        const result = await response.json()
+        return result.data.player
+    } catch (error) {
+        console.error(error)
+    }
+
+}
+
 
 export default GetAllPlayers

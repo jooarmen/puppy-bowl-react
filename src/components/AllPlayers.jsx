@@ -28,10 +28,12 @@ function AllPlayers(){
                     <div key={player.id}>
                         <h3>{player.name}</h3>
                         <h4>{player.breed}</h4>
+                        <img src={player.imageUrl} alt={player.name} />
                         <button onClick={()=> navigate(`/players/${player.id}`)}>
                             View Details
                         </button>
                     </div>
+                    
                 )
             })
         }
