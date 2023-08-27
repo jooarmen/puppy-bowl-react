@@ -10,7 +10,9 @@ function SinglePlayer(){
     useEffect(()=>{
         const fetchSinglePlayerData = async () =>{
             try {
-                const fetchedSinglePlayer = await GetSinglePlayer(params)
+                const playerId= params.playerId
+                //console.log("Fetching player with playerId:", playerId)
+                const fetchedSinglePlayer = await GetSinglePlayer(playerId)
                 setPlayer(fetchedSinglePlayer)
             } catch (error) {
                 console.error("Trouble fetching single player" , error)
@@ -19,7 +21,7 @@ function SinglePlayer(){
         }
         fetchSinglePlayerData()
 
-    },[params])
+    },[params.playerId])
 
     return (
         <div>
