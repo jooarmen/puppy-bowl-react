@@ -38,7 +38,7 @@ function SinglePlayer(){
                     <h4>Status: {player.status}</h4>
                     <h4>ID: {player.id}</h4>
                     <img src={player.imageUrl} />
-                    <button onClick={handleDelete}>Delete</button>
+                    <button onClick={handleDelete}>Remove Puppy</button>
 
                     
                 </div>

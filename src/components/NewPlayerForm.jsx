@@ -48,7 +48,7 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT_NAME}/players
       <h2>New Player Form</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="name">Name: </label>
+          <label htmlFor="name">Name </label>
           <input
             type="text"
             value={name}
@@ -57,7 +57,7 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT_NAME}/players
           />
         </div>
         <div>
-          <label htmlFor="breed">Breed: </label>
+          <label htmlFor="breed">Breed </label>
           <input
             type="text"
             value={breed}
@@ -66,7 +66,7 @@ const API_URL = `https://fsa-puppy-bowl.herokuapp.com/api/${COHORT_NAME}/players
           />
         </div>
         <div>
-          <label htmlFor="imageUrl">Image URL: </label>
+          <label htmlFor="imageUrl">Image URL </label>
           <input
             type="url"
             value={imageUrl}

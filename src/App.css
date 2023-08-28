@@ -48,3 +48,27 @@ img{
   padding-bottom: .5rem;
   
 }
+
+.search-bar{
+  padding: 1rem;
+}
+
+.puppy-cards{
+  display: grid;
+  padding: 2rem;
+
+}
+
+h3{
+  margin-bottom: -1rem;
+}
+
+input{
+margin: .2rem;
+}
+
+label{
+  display: flex;
+  justify-content:center;
+}
+
