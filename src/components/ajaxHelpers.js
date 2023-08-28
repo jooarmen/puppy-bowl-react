@@ -24,6 +24,23 @@ export async function GetSinglePlayer(playerId){
     }
 
 }
-
+export async function DeletePlayer(playerId) {
+    try {
+      const response = await fetch(`${API_URL}/${playerId}`, {
+        method: "DELETE",
+      });
+  
+      if (response.ok) {
+        return true;
+      } else {
+        console.error("Failed to delete player");
+        return false;
+      }
+    } catch (error) {
+      console.error("Error deleting player", error);
+      return false;
+    }
+}
+    
 
 export default GetAllPlayers

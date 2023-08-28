@@ -5,17 +5,17 @@ import SinglePlayer from './components/SinglePlayer'
 import './App.css'
 
 function App() {
-  //const [count, setCount] = useState(0)
-
   return (
     <>
     <div id='navbar'>
       <Link to="/"> Home </Link>
-      
+    
 
 
     </div>
+    
     <div id='main-section'>
+
         <Routes>
           <Route path='/' element={<AllPlayers/>} />
           <Route path='/players/:playerId' element={<SinglePlayer/>}/>
